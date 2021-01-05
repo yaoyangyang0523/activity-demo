@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.workOrder.dao.IWorkOrderDao">
+
+    <insert id="insertData" parameterType="com.yang.workOrder.entity.WorkOrder">
+        INSERT INTO work_order (
+            sqNum,
+            startTime,
+            userName,
+            processName
+        ) VALUES (
+            #{sqNum, jdbcType=VARCHAR},
+            #{startTime, jdbcType=DECIMAL},
+            #{userName, jdbcType=VARCHAR},
+            #{processName, jdbcType=VARCHAR}
+        )
+    </insert>
+
+    <update id="updateData" parameterType="com.yang.workOrder.entity.WorkOrder">
+        UPDATE work_order
+        <set>
+            <if test="status != null and status != '' and status != '0'">
+                status = #{status, jdbcType=VARCHAR},
+            </if>
+            <if test="processId != null and processId != ''">
+                processId = #{processId, jdbcType=VARCHAR}
+            </if>
+        </set>
+        WHERE id = #{id, jdbcType=INTEGER}
+    </update>
+
+    <select id="queryById" resultType="com.yang.workOrder.entity.WorkOrder" parameterType="java.lang.Integer">
+        SELECT * FROM work_order WHERE id = #{id, jdbcType=INTEGER}
+    </select>
+
+    <select id="queryList" resultType="com.yang.workOrder.entity.WorkOrder" parameterType="com.alibaba.fastjson.JSONObject">
+        SELECT
+            t1.id,
+            t1.sqNum,
+            t1.startTime,
+            t2.name userName,
+            t1.status,
+            t1.processId,
+            t1.processName
+        FROM
+            work_order t1, sys_user t2
+        WHERE
+            t1.userName = t2.userName
+        <if test="userName != null and userName != 'admin'">
+            AND t1.userName = #{userName, jdbcType=VARCHAR}
+        </if>
+        <if test="processName != null and processName != ''">
+            AND t1.processName = #{processName, jdbcType=VARCHAR}
+        </if>
+        ORDER BY t1.startTime DESC
+        <if test="pageStart !=null">
+            LIMIT #{pageStart, jdbcType=INTEGER}, #{pageEnd, jdbcType=INTEGER}
+        </if>
+
+    </select>
+
+    <select id="queryCount" resultType="java.lang.Integer" parameterType="com.alibaba.fastjson.JSONObject">
+        SELECT
+            COUNT(t1.id)
+        FROM
+            work_order t1, sys_user t2
+        WHERE
+            t1.userName = t2.userName
+        <if test="userName != null and userName != 'admin'">
+            AND t1.userName = #{userName, jdbcType=VARCHAR}
+        </if>
+        <if test="processName != null and processName != ''">
+            AND t1.processName = #{processName, jdbcType=VARCHAR}
+        </if>
+    </select>
+
+    <select id="querySpList" resultType="com.alibaba.fastjson.JSONObject" parameterType="com.alibaba.fastjson.JSONObject">
+        SELECT
+            t1.id,
+            t1.sqNum,
+            t1.startTime,
+            t2.name userName,
+            t1.status,
+            t1.processId,
+            t1.processName,
+            v.taskId,
+            (SELECT a.name FROM sys_user a WHERE a.userName = v.spUser) spName
+        FROM
+            work_order t1, sys_user t2, v_task v
+        WHERE
+            t1.userName = t2.userName
+            AND t1.processId = v.PROC_INST_ID_
+            AND t1.status = '1'
+        <if test="userName != 'admin'">
+            AND v.spUser = #{userName, jdbcType=VARCHAR}
+        </if>
+        <if test="processName != null and processName != ''">
+            AND t1.processName = #{processName, jdbcType=VARCHAR}
+        </if>
+        ORDER BY t1.startTime DESC
+        <if test="pageStart !=null">
+            LIMIT #{pageStart, jdbcType=INTEGER}, #{pageEnd, jdbcType=INTEGER}
+        </if>
+
+    </select>
+
+    <select id="querySpCount" resultType="java.lang.Integer" parameterType="com.alibaba.fastjson.JSONObject">
+        SELECT
+            COUNT(t1.id)
+        FROM
+            work_order t1, sys_user t2, v_task v
+        WHERE
+            t1.userName = t2.userName
+            AND t1.processId = v.PROC_INST_ID_
+            AND t1.status = '1'
+        <if test="userName != 'admin'">
+            AND v.spUser = #{userName, jdbcType=VARCHAR}
+        </if>
+        <if test="processName != null and processName != ''">
+            AND t1.processName = #{processName, jdbcType=VARCHAR}
+        </if>
+    </select>
+
+    <delete id="delData" parameterType="java.lang.Integer">
+        DELETE FROM work_order WHERE id = #{id, jdbcType=INTEGER}
+    </delete>
+
+</mapper>

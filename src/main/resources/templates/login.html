@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>主页面</title>
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/bootstrap-table/1.18.1/bootstrap-table.min.css">
+
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap-table/1.18.1/bootstrap-table.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap-table/1.18.1/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script th:src="@{/js/yang.js}"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="col-md-12" style="text-align: center">
+            <h1>
+                <b>Activity 工作流学习</b>
+            </h1>
+        </div>
+    </div>
+
+    <hr style="width: 100%; size: 5px; color: black; margin-top: 10px;">
+
+    <ul id="myTab" class="nav nav-tabs">
+        <li class="active"><a href="#ptWork" data-toggle="tab">申请工单</a></li>
+        <li><a href="#spWork" data-toggle="tab">审批工单</a></li>
+    </ul>
+
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="ptWork">
+            <div class="row-fluid" style="padding-top: 20px;">
+                <div class="col-md-9" style="border-right: 1px solid #000000;">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label for="userSelect1" class="col-sm-3 control-label">申请人账号</label>
+                                    <div class="col-sm-9">
+                                        <select id="userSelect1" class="form-control"></select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="processSelect1" class="col-sm-3 control-label">流程选择</label>
+                                    <div class="col-sm-9">
+                                        <select id="processSelect1" class="form-control"></select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary" type="button" onclick="insertData()">新增</button>&nbsp;&nbsp;
+                            <button class="btn btn-primary" type="button" onclick="refreshPtTable()">查询</button>
+                        </div>
+                    </div>
+
+                    <table class="table" id="ptTable"></table>
+
+                </div>
+
+                <div class="col-md-3" style="padding-top: 80px;">
+                    <dl>
+                        <dt>申请部分相关说明</dt>
+                        <dt>1、新增</dt>
+                        <dd>为了方便，需要选择具体申请人和所要使用的流程。提交之后生成一条工单，工单编号随机生成，列表刷新。</dd>
+                        <dt>2、查询</dt>
+                        <dd>列表根据申请人账号、流程刷新列表。</dd>
+                        <dt>3、状态与操作</dt>
+                        <dd>工单目前分为四种状态：0草稿、1审批中、2不通过、3通过。</dd>
+                        <dd>0草稿：可以删除工单、开始流程</dd>
+                        <dd>1审批中：可以撤回工单、流转查看可能涉及到的操作人</dd>
+                        <dd>2不通过、3通过：流程结束</dd>
+                        <dt>4、特殊</dt>
+                        <dd>admin为管理员，可以查看并操作所有工单</dd>
+                        <dd>此页面申请人账号为当前操作账号</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="spWork">
+            <div class="row-fluid" style="padding-top: 20px;padding-bottom: 20px;">
+                <div class="col-md-9" style="border-right: 1px solid #000000;">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label for="userSelect2" class="col-sm-3 control-label">审批人账号</label>
+                                    <div class="col-sm-9">
+                                        <select id="userSelect2" class="form-control"></select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="processSelect2" class="col-sm-3 control-label">流程选择</label>
+                                    <div class="col-sm-9">
+                                        <select id="processSelect2" class="form-control"></select>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <div class="col-md-4"><button class="btn btn-primary" type="button" onclick="refreshSpTable()">查询</button></div>
+                    </div>
+
+                    <table class="table" id="spTable"></table>
+                </div>
+
+                <div class="col-md-3" style="padding-top: 75px;">
+                    <dl>
+                        <dt>审批部分相关说明</dt>
+                        <dt>1、查询</dt>
+                        <dd>列表根据申请人账号、流程刷新列表。</dd>
+                        <dt>2、状态与操作</dt>
+                        <dd>这里工单状态只有：1审批中。</dd>
+                        <dd>1审批中：审批工单、流转查看可能涉及到的操作人</dd>
+                        <dt>3、特殊</dt>
+                        <dd>admin为管理员，可以查看并操作所有工单</dd>
+                        <dd>此页面审批人账号为当前操作账号</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">流转</h4>
+            </div>
+
+            <div class="modal-body" id="moveShow"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="spModal" tabindex="-1" role="dialog" aria-labelledby="spModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="spModalLabel">审批</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">流程选择</label>
+                        <div class="col-sm-8">
+                            <label class="radio-inline">
+                                <input type="radio" name="spRadio" value="1" checked> 同意
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="spRadio" value="0"> 不同意
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="spResult" class="col-sm-2 control-label">审批意见</label>
+                        <div class="col-sm-8">
+                            <textarea class="form-control" rows="3" id="spResult"
+                                      placeholder="若同意，可不填写审批意见。若不同意或退回，需要说明原因" maxlength="50"></textarea>
+                        </div>
+                    </div>
+
+                    <input type="hidden" id="workId" value="">
+                    <input type="hidden" id="taskId" value="">
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="spSave()">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    // 初始化select下拉选
+    function initSelect() {
+        ajaxPost('/user/queryList', {}, function (data) {
+            data = eval(data);
+            if (data != null && data.length > 0) {
+                var str = "";
+                for(var i = 0; i < data.length ; i++){
+                    str += "<option value='" + data[i].userName + "'>" + data[i].name + "</option>";
+                }
+                $("#userSelect1").html(str);
+                $("#userSelect2").html(str);
+            }
+        });
+
+        var str = "";
+        str += "<option value='A_001'>A_001:节点固定审批人</option>";
+        $("#processSelect1").html(str);
+        $("#processSelect2").html(str);
+    }
+
+    // 新增工单
+    function insertData() {
+        var param = {userName: $("#userSelect1").val(), processName: $("#processSelect1").val()};
+        ajaxPost("/workOrder/insertData", param, function (data) {
+            if (data.status == 200) {
+                alert(data.msg);
+                refreshPtTable();
+            } else {
+                alert(data.msg);
+            }
+        });
+    }
+
+    // 删除工单
+    function deleteData(id) {
+        ajaxPost("/workOrder/deleteData", {id: id}, function (data) {
+            if (data.status == 200) {
+                alert(data.msg);
+                refreshPtTable();
+            } else {
+                alert(data.msg);
+            }
+        });
+    }
+
+    // 初始化表格
+    function initTable() {
+        var param1 = {
+            userName: $("#userSelect1").val(),
+            processName: $("#processSelect1").val()
+        };
+        $('#ptTable').bootstrapTable(tableOpt('/workOrder/queryList', param1, 'pt'));
+        $('#ptTable').bootstrapTable('hideColumn', 'id');
+
+        var param2 = {
+            userName: $("#userSelect2").val(),
+            processName: $("#processSelect2").val()
+        };
+        $('#spTable').bootstrapTable(tableOpt('/workOrder/querySpList', param2, 'sp'));
+        $('#spTable').bootstrapTable('hideColumn', 'id');
+    }
+
+    // 刷新申请表格
+    function refreshPtTable() {
+        $('#ptTable').bootstrapTable('destroy');
+        var param1 = {
+            userName: $("#userSelect1").val(),
+            processName: $("#processSelect1").val()
+        };
+        $('#ptTable').bootstrapTable( tableOpt('/workOrder/queryList', param1, 'pt'));
+        $('#ptTable').bootstrapTable('hideColumn', 'id');
+    }
+
+    // 刷新审批表格
+    function refreshSpTable() {
+        $('#spTable').bootstrapTable('destroy');
+        var param2 = {
+            userName: $("#userSelect2").val(),
+            processName: $("#processSelect2").val()
+        };
+        $('#spTable').bootstrapTable(tableOpt('/workOrder/querySpList', param2, 'sp'));
+        $('#spTable').bootstrapTable('hideColumn', 'id');
+    }
+
+    // 提交，开始审批
+    function startProcess(id) {
+        ajaxPost("/workOrder/startProcess", {id: id}, function (data) {
+            if (data.status == 200) {
+                alert(data.msg);
+                refreshPtTable();
+                refreshSpTable();
+            } else {
+                alert(data.msg);
+            }
+        });
+    }
+
+    // 撤回工单
+    function backProcess(id) {
+        ajaxPost("/workOrder/backProcess", {id: id}, function (data) {
+            if (data.status == 200) {
+                alert(data.msg);
+                refreshPtTable();
+                refreshSpTable();
+            } else {
+                alert(data.msg);
+            }
+        });
+    }
+
+    // 流转
+    function moveProcess(id) {
+        $("#moveShow").empty();
+        ajaxPost("/workOrder/moveProcess", {id: id}, function (data) {
+            data = eval(data);
+            if (data != null && data.length > 0) {
+                var str = "<table class=\"table table-bordered\"><tr class=\"active\"><td>环节</td><td>审批人</td><td>意见</td></tr>";
+                for(var i = 0; i < data.length ; i++){
+                    str += "<tr><td>" + data[i].taskName + "</td><td>" + data[i].spUser + "</td><td>" + data[i].spResult + "</td>";
+                }
+                str += "</table>";
+                $("#moveShow").html(str);
+                $('#myModal').modal('show');
+            }
+        });
+    }
+
+    // 打开审批框
+    function approvalProcess(id, taskId) {
+        $("#workId").val(id);
+        $("#taskId").val(taskId);
+        $("#spResult").val('');
+        $('#spModal').modal('show');
+    }
+
+    // 审批
+    function spSave() {
+        var param = {
+            id: $("#workId").val(),
+            taskId: $("#taskId").val(),
+            pass: $("input[name='spRadio']:checked").val(),
+            result: $("#spResult").val(),
+            spUser: $("#userSelect2").val()
+        };
+        ajaxPost("/workOrder/approvalProcess", param, function (data) {
+            $('#spModal').modal('hide');
+            if (data.status == 200) {
+                alert(data.msg);
+                refreshPtTable();
+                refreshSpTable();
+            } else {
+                alert(data.msg);
+            }
+        });
+    }
+
+    // 初始化
+    $(document).ready(function(){
+        initSelect();
+        initTable();
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1189 @@
+2021-01-05 08:54:02.419  INFO 32244 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 32244 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 08:54:02.434 DEBUG 32244 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 08:54:02.434  INFO 32244 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 08:54:03.309  INFO 32244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 08:54:03.309  INFO 32244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 08:54:03.309  INFO 32244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 08:54:03.309  INFO 32244 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 08:54:03.309  INFO 32244 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 08:54:03.309  INFO 32244 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 08:54:03.309  INFO 32244 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 08:54:04.399  INFO 32244 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 08:54:04.477  INFO 32244 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 08:54:04.477  INFO 32244 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2011 ms
+2021-01-05 08:54:04.774  INFO 32244 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 08:54:04.852  INFO 32244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 08:54:04.852  WARN 32244 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 08:54:05.087  INFO 32244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 08:54:05.461  INFO 32244 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 08:54:05.461  INFO 32244 --- [main] o.activiti.engine.impl.db.DbSqlSession   : performing drop on engine with resource org/activiti/db/drop/activiti.mysql.drop.engine.sql
+2021-01-05 08:54:05.477  INFO 32244 --- [main] o.activiti.engine.impl.db.DbSqlSession   : Found MySQL: majorVersion=5 minorVersion=7
+2021-01-05 08:54:06.071  INFO 32244 --- [main] o.activiti.engine.impl.db.DbSqlSession   : performing drop on history with resource org/activiti/db/drop/activiti.mysql.drop.history.sql
+2021-01-05 08:54:06.071  INFO 32244 --- [main] o.activiti.engine.impl.db.DbSqlSession   : Found MySQL: majorVersion=5 minorVersion=7
+2021-01-05 08:54:06.399  INFO 32244 --- [main] o.activiti.engine.impl.db.DbSqlSession   : performing drop on identity with resource org/activiti/db/drop/activiti.mysql.drop.identity.sql
+2021-01-05 08:54:06.399  INFO 32244 --- [main] o.activiti.engine.impl.db.DbSqlSession   : Found MySQL: majorVersion=5 minorVersion=7
+2021-01-05 08:54:06.477  INFO 32244 --- [main] o.activiti.engine.impl.db.DbSqlSession   : performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+2021-01-05 08:54:06.477  INFO 32244 --- [main] o.activiti.engine.impl.db.DbSqlSession   : Found MySQL: majorVersion=5 minorVersion=7
+2021-01-05 08:54:08.164  INFO 32244 --- [main] o.activiti.engine.impl.db.DbSqlSession   : performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+2021-01-05 08:54:08.164  INFO 32244 --- [main] o.activiti.engine.impl.db.DbSqlSession   : Found MySQL: majorVersion=5 minorVersion=7
+2021-01-05 08:54:08.461  INFO 32244 --- [main] o.activiti.engine.impl.db.DbSqlSession   : performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+2021-01-05 08:54:08.461  INFO 32244 --- [main] o.activiti.engine.impl.db.DbSqlSession   : Found MySQL: majorVersion=5 minorVersion=7
+2021-01-05 08:54:08.570  INFO 32244 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 08:54:08.570  INFO 32244 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 08:54:08.570  INFO 32244 --- [Thread-13] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 08:54:08.570  INFO 32244 --- [Thread-14] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 08:54:08.586  INFO 32244 --- [Thread-15] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 08:54:09.086  INFO 32244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 08:54:09.101  INFO 32244 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 7.032 seconds (JVM running for 8.508)
+2021-01-05 09:00:14.394  INFO 32244 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 09:00:14.395  INFO 32244 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 09:00:14.397  INFO 32244 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-01-05 09:00:14.689  INFO 32244 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 09:00:14.753  INFO 32244 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 09:00:14.760 DEBUG 32244 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 09:00:14.766 DEBUG 32244 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 09:00:14.773 DEBUG 32244 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 09:00:14.855  INFO 32244 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 09:00:14.867  INFO 32244 --- [http-nio-18080-exec-5] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 09:00:14.878  INFO 32244 --- [http-nio-18080-exec-6] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/favicon.ico
+2021-01-05 09:00:14.884  INFO 32244 --- [http-nio-18080-exec-6] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/error
+2021-01-05 09:00:14.928 DEBUG 32244 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND (v.ASSIGNEE_ = ? OR v.USER_ID_ = ?) AND t1.processName = ?
+2021-01-05 09:00:14.928 DEBUG 32244 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.userName = ? AND t1.processName = ?
+2021-01-05 09:00:14.928 DEBUG 32244 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: admin(String), admin(String), A_001(String)
+2021-01-05 09:00:14.929 DEBUG 32244 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: admin(String), A_001(String)
+2021-01-05 09:00:14.932 DEBUG 32244 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 09:00:14.932 DEBUG 32244 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.userName = ? AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 09:00:14.932 DEBUG 32244 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: admin(String), A_001(String), 0(Integer), 10(Integer)
+2021-01-05 09:00:14.934 DEBUG 32244 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 6
+2021-01-05 09:00:14.943 DEBUG 32244 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 09:00:14.943 DEBUG 32244 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND (v.ASSIGNEE_ = ? OR v.USER_ID_ = ?) AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 09:00:14.944 DEBUG 32244 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: admin(String), admin(String), A_001(String), 0(Integer), 10(Integer)
+2021-01-05 09:00:14.944 DEBUG 32244 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 0
+2021-01-05 09:56:11.438  INFO 32244 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 09:56:11.438  INFO 32244 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 09:56:11.438  INFO 32244 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 09:56:11.438  INFO 32244 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 09:56:11.457  INFO 32244 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 09:56:11.457  INFO 32244 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 09:56:11.457  INFO 32244 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 10:39:40.225  INFO 25728 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 25728 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 10:39:40.225 DEBUG 25728 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 10:39:40.225  INFO 25728 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 10:39:41.020  INFO 25728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 10:39:41.036  INFO 25728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 10:39:41.036  INFO 25728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 10:39:41.036  INFO 25728 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 10:39:41.036  INFO 25728 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 10:39:41.036  INFO 25728 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 10:39:41.036  INFO 25728 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 10:39:42.083  INFO 25728 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 10:39:42.176  INFO 25728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 10:39:42.176  INFO 25728 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1905 ms
+2021-01-05 10:39:42.431  INFO 25728 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 10:39:42.493  INFO 25728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 10:39:42.493  WARN 25728 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 10:39:42.665  INFO 25728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 10:39:43.035  INFO 25728 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 10:39:43.035  INFO 25728 --- [main] o.activiti.engine.impl.db.DbSqlSession   : performing drop on engine with resource org/activiti/db/drop/activiti.mysql.drop.engine.sql
+2021-01-05 10:39:43.051  INFO 25728 --- [main] o.activiti.engine.impl.db.DbSqlSession   : Found MySQL: majorVersion=5 minorVersion=7
+2021-01-05 10:39:43.550  INFO 25728 --- [main] o.activiti.engine.impl.db.DbSqlSession   : performing drop on history with resource org/activiti/db/drop/activiti.mysql.drop.history.sql
+2021-01-05 10:39:43.550  INFO 25728 --- [main] o.activiti.engine.impl.db.DbSqlSession   : Found MySQL: majorVersion=5 minorVersion=7
+2021-01-05 10:39:43.769  INFO 25728 --- [main] o.activiti.engine.impl.db.DbSqlSession   : performing drop on identity with resource org/activiti/db/drop/activiti.mysql.drop.identity.sql
+2021-01-05 10:39:43.769  INFO 25728 --- [main] o.activiti.engine.impl.db.DbSqlSession   : Found MySQL: majorVersion=5 minorVersion=7
+2021-01-05 10:39:43.816  INFO 25728 --- [main] o.activiti.engine.impl.db.DbSqlSession   : performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+2021-01-05 10:39:43.816  INFO 25728 --- [main] o.activiti.engine.impl.db.DbSqlSession   : Found MySQL: majorVersion=5 minorVersion=7
+2021-01-05 10:39:45.394  INFO 25728 --- [main] o.activiti.engine.impl.db.DbSqlSession   : performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+2021-01-05 10:39:45.394  INFO 25728 --- [main] o.activiti.engine.impl.db.DbSqlSession   : Found MySQL: majorVersion=5 minorVersion=7
+2021-01-05 10:39:45.722  INFO 25728 --- [main] o.activiti.engine.impl.db.DbSqlSession   : performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+2021-01-05 10:39:45.722  INFO 25728 --- [main] o.activiti.engine.impl.db.DbSqlSession   : Found MySQL: majorVersion=5 minorVersion=7
+2021-01-05 10:39:45.831  INFO 25728 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 10:39:45.831  INFO 25728 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 10:39:45.831  INFO 25728 --- [Thread-12] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 10:39:45.831  INFO 25728 --- [Thread-13] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 10:39:45.831  INFO 25728 --- [Thread-14] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 10:39:46.254  INFO 25728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 10:39:46.254  INFO 25728 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 6.419 seconds (JVM running for 7.269)
+2021-01-05 10:39:50.885  INFO 25728 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 10:39:50.885  INFO 25728 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 10:39:50.886  INFO 25728 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-05 10:39:51.139  INFO 25728 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 10:39:51.174  INFO 25728 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 10:39:51.180 DEBUG 25728 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 10:39:51.184 DEBUG 25728 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 10:39:51.190 DEBUG 25728 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 10:39:51.256  INFO 25728 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 10:39:51.266  INFO 25728 --- [http-nio-18080-exec-5] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 10:39:51.306 DEBUG 25728 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 10:39:51.306 DEBUG 25728 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 10:39:51.307 DEBUG 25728 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 10:39:51.307 DEBUG 25728 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 10:39:51.309 DEBUG 25728 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 10:39:51.310 DEBUG 25728 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 10:39:51.310 DEBUG 25728 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 10:39:51.312 DEBUG 25728 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 10:39:51.316 DEBUG 25728 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 10:39:51.317 DEBUG 25728 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 10:39:51.317 DEBUG 25728 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 10:39:51.318 DEBUG 25728 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 0
+2021-01-05 10:40:02.309  INFO 25728 --- [http-nio-18080-exec-7] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 10:40:02.310 DEBUG 25728 --- [http-nio-18080-exec-7] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 10:40:02.310 DEBUG 25728 --- [http-nio-18080-exec-7] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 10:40:02.311 DEBUG 25728 --- [http-nio-18080-exec-7] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 10:40:02.332  INFO 25728 --- [http-nio-18080-exec-8] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 10:40:02.332 DEBUG 25728 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 10:40:02.333 DEBUG 25728 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 10:40:02.333 DEBUG 25728 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 10:40:02.334 DEBUG 25728 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 10:40:02.334 DEBUG 25728 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 10:40:02.335 DEBUG 25728 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 10:40:02.343  INFO 25728 --- [http-nio-18080-exec-9] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 10:40:02.344 DEBUG 25728 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 10:40:02.345 DEBUG 25728 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 10:40:02.345 DEBUG 25728 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 10:40:02.346 DEBUG 25728 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 10:40:02.346 DEBUG 25728 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 10:40:02.347 DEBUG 25728 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 0
+2021-01-05 10:41:12.217  INFO 25728 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/startProcess
+2021-01-05 10:41:12.221 DEBUG 25728 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.queryById        : ==>  Preparing: SELECT * FROM work_order WHERE id = ?
+2021-01-05 10:41:12.221 DEBUG 25728 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.queryById        : ==> Parameters: 8(Integer)
+2021-01-05 10:41:12.222 DEBUG 25728 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.queryById        : <==      Total: 1
+2021-01-05 10:41:12.281 DEBUG 25728 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.updateData       : ==>  Preparing: UPDATE work_order SET status = ?, processId = ? WHERE id = ?
+2021-01-05 10:41:12.283 DEBUG 25728 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.updateData       : ==> Parameters: 1(String), 4(String), 8(Integer)
+2021-01-05 10:41:12.284 DEBUG 25728 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.updateData       : <==    Updates: 1
+2021-01-05 10:41:13.530  INFO 25728 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 10:41:13.531 DEBUG 25728 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 10:41:13.531 DEBUG 25728 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 10:41:13.532 DEBUG 25728 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 10:41:13.532 DEBUG 25728 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 10:41:13.533 DEBUG 25728 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 10:41:13.536 DEBUG 25728 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 10:41:13.541  INFO 25728 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 10:41:13.542 DEBUG 25728 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 10:41:13.543 DEBUG 25728 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 10:41:13.551 DEBUG 25728 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 10:41:13.552 DEBUG 25728 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 10:41:13.553 DEBUG 25728 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 10:41:13.554 DEBUG 25728 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 2
+2021-01-05 10:48:43.681  INFO 25728 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 10:48:43.681  INFO 25728 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 10:48:43.681  INFO 25728 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 10:48:43.681  INFO 25728 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 10:48:43.681  INFO 25728 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 10:48:43.681  INFO 25728 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 10:48:43.696  INFO 25728 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 10:51:20.492  INFO 14484 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 14484 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 10:51:20.492 DEBUG 14484 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 10:51:20.492  INFO 14484 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 10:51:21.284  INFO 14484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 10:51:21.284  INFO 14484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 10:51:21.284  INFO 14484 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 10:51:21.284  INFO 14484 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 10:51:21.284  INFO 14484 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 10:51:21.284  INFO 14484 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 10:51:21.284  INFO 14484 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 10:51:22.318  INFO 14484 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 10:51:22.425  INFO 14484 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 10:51:22.425  INFO 14484 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1901 ms
+2021-01-05 10:51:22.726  INFO 14484 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 10:51:22.789  INFO 14484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 10:51:22.789  WARN 14484 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 10:51:22.975  INFO 14484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 10:51:23.323  INFO 14484 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 10:51:23.385  INFO 14484 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 10:51:23.385  INFO 14484 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 10:51:23.385  INFO 14484 --- [Thread-9] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 10:51:23.385  INFO 14484 --- [Thread-10] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 10:51:23.385  INFO 14484 --- [Thread-8] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 10:51:23.707  INFO 14484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 10:51:23.723  INFO 14484 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.594 seconds (JVM running for 4.439)
+2021-01-05 10:51:38.074  INFO 14484 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 10:51:38.074  INFO 14484 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 10:51:38.075  INFO 14484 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-05 10:51:38.297  INFO 14484 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 10:51:38.322  INFO 14484 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 10:51:38.328 DEBUG 14484 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 10:51:38.333 DEBUG 14484 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 10:51:38.337 DEBUG 14484 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 10:51:38.410  INFO 14484 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 10:51:38.421  INFO 14484 --- [http-nio-18080-exec-5] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 10:51:38.464 DEBUG 14484 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 10:51:38.464 DEBUG 14484 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 10:51:38.464 DEBUG 14484 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 10:51:38.464 DEBUG 14484 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 10:51:38.465 DEBUG 14484 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 10:51:38.466 DEBUG 14484 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 10:51:38.466 DEBUG 14484 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 10:51:38.468 DEBUG 14484 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 10:51:38.472 DEBUG 14484 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 10:51:38.473 DEBUG 14484 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 10:51:38.473 DEBUG 14484 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 10:51:38.475 DEBUG 14484 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 2
+2021-01-05 10:51:40.771  INFO 14484 --- [http-nio-18080-exec-6] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/moveProcess
+2021-01-05 10:51:40.773 DEBUG 14484 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : ==>  Preparing: SELECT * FROM work_order WHERE id = ?
+2021-01-05 10:51:40.773 DEBUG 14484 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : ==> Parameters: 8(Integer)
+2021-01-05 10:51:40.774 DEBUG 14484 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : <==      Total: 1
+2021-01-05 10:51:56.827  INFO 14484 --- [http-nio-18080-exec-7] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/moveProcess
+2021-01-05 10:51:56.829 DEBUG 14484 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.queryById        : ==>  Preparing: SELECT * FROM work_order WHERE id = ?
+2021-01-05 10:51:56.829 DEBUG 14484 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.queryById        : ==> Parameters: 8(Integer)
+2021-01-05 10:51:56.830 DEBUG 14484 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.queryById        : <==      Total: 1
+2021-01-05 10:53:37.905  WARN 14484 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m44s808ms593µs700ns).
+2021-01-05 10:56:59.507  INFO 14484 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 10:56:59.507  INFO 14484 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 10:56:59.507  INFO 14484 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 10:56:59.507  INFO 14484 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 10:56:59.507  INFO 14484 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 10:56:59.507  INFO 14484 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 10:56:59.507  INFO 14484 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 11:14:02.255  INFO 34108 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 34108 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 11:14:02.258 DEBUG 34108 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 11:14:02.258  INFO 34108 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 11:14:03.036  INFO 34108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 11:14:03.052  INFO 34108 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 11:14:03.052  INFO 34108 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 11:14:03.052  INFO 34108 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 11:14:03.052  INFO 34108 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 11:14:03.052  INFO 34108 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 11:14:03.052  INFO 34108 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 11:14:04.081  INFO 34108 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 11:14:04.174  INFO 34108 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 11:14:04.174  INFO 34108 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1868 ms
+2021-01-05 11:14:04.424  INFO 34108 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 11:14:04.487  INFO 34108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 11:14:04.487  WARN 34108 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 11:14:04.690  INFO 34108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 11:14:05.055  INFO 34108 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 11:14:05.102  INFO 34108 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 11:14:05.102  INFO 34108 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 11:14:05.102  INFO 34108 --- [Thread-7] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 11:14:05.102  INFO 34108 --- [Thread-8] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 11:14:05.102  INFO 34108 --- [Thread-9] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 11:14:05.390  INFO 34108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 11:14:05.397  INFO 34108 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.487 seconds (JVM running for 4.304)
+2021-01-05 11:14:11.350  INFO 34108 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 11:14:11.350  INFO 34108 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 11:14:11.351  INFO 34108 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-05 11:14:11.605  INFO 34108 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 11:14:11.630  INFO 34108 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 11:14:11.637 DEBUG 34108 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 11:14:11.642 DEBUG 34108 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 11:14:11.646 DEBUG 34108 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 11:14:11.719  INFO 34108 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 11:14:11.731  INFO 34108 --- [http-nio-18080-exec-5] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 11:14:11.772 DEBUG 34108 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 11:14:11.772 DEBUG 34108 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 11:14:11.772 DEBUG 34108 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 11:14:11.772 DEBUG 34108 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 11:14:11.773 DEBUG 34108 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 11:14:11.774 DEBUG 34108 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 11:14:11.775 DEBUG 34108 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 11:14:11.776 DEBUG 34108 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 11:14:11.780 DEBUG 34108 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 11:14:11.781 DEBUG 34108 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 11:14:11.781 DEBUG 34108 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 11:14:11.783 DEBUG 34108 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 2
+2021-01-05 11:14:14.268  INFO 34108 --- [http-nio-18080-exec-6] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/moveProcess
+2021-01-05 11:14:14.270 DEBUG 34108 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : ==>  Preparing: SELECT * FROM work_order WHERE id = ?
+2021-01-05 11:14:14.270 DEBUG 34108 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : ==> Parameters: 8(Integer)
+2021-01-05 11:14:14.271 DEBUG 34108 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : <==      Total: 1
+2021-01-05 11:14:14.355 DEBUG 34108 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 11:14:14.355 DEBUG 34108 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: zhangsan(String)
+2021-01-05 11:14:14.356 DEBUG 34108 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 11:14:14.356 DEBUG 34108 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 11:14:14.356 DEBUG 34108 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: lisi(String)
+2021-01-05 11:14:14.357 DEBUG 34108 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 11:14:14.357 DEBUG 34108 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 11:14:14.357 DEBUG 34108 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: wangwu(String)
+2021-01-05 11:14:14.358 DEBUG 34108 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 11:18:13.220  INFO 34108 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 11:18:13.220  INFO 34108 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 11:18:13.220  INFO 34108 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 11:18:13.220  INFO 34108 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 11:18:13.220  INFO 34108 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 11:18:13.220  INFO 34108 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 11:18:13.235  INFO 34108 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 11:18:16.963  INFO 34500 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 34500 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 11:18:16.963 DEBUG 34500 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 11:18:16.963  INFO 34500 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 11:18:17.794  INFO 34500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 11:18:17.794  INFO 34500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 11:18:17.794  INFO 34500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 11:18:17.794  INFO 34500 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 11:18:17.794  INFO 34500 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 11:18:17.794  INFO 34500 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 11:18:17.794  INFO 34500 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 11:18:18.840  INFO 34500 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 11:18:18.942  INFO 34500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 11:18:18.942  INFO 34500 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1932 ms
+2021-01-05 11:18:19.195  INFO 34500 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 11:18:19.258  INFO 34500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 11:18:19.258  WARN 34500 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 11:18:19.449  INFO 34500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 11:18:19.819  INFO 34500 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 11:18:19.851  INFO 34500 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 11:18:19.851  INFO 34500 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 11:18:19.851  INFO 34500 --- [Thread-7] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 11:18:19.851  INFO 34500 --- [Thread-8] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 11:18:19.851  INFO 34500 --- [Thread-9] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 11:18:20.132  INFO 34500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 11:18:20.132  INFO 34500 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.536 seconds (JVM running for 4.336)
+2021-01-05 11:18:33.842  INFO 34500 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 11:18:33.842  INFO 34500 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 11:18:33.843  INFO 34500 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-05 11:18:34.111  INFO 34500 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 11:18:34.117 DEBUG 34500 --- [http-nio-18080-exec-2] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 11:18:34.122 DEBUG 34500 --- [http-nio-18080-exec-2] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 11:18:34.127 DEBUG 34500 --- [http-nio-18080-exec-2] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 11:18:34.194  INFO 34500 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 11:18:34.219  INFO 34500 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 11:18:34.264 DEBUG 34500 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 11:18:34.264 DEBUG 34500 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 11:18:34.264 DEBUG 34500 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 11:18:34.264 DEBUG 34500 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 11:18:34.265 DEBUG 34500 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 11:18:34.266 DEBUG 34500 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 11:18:34.266 DEBUG 34500 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 11:18:34.268 DEBUG 34500 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 11:18:34.271 DEBUG 34500 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 11:18:34.273 DEBUG 34500 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 11:18:34.273 DEBUG 34500 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 11:18:34.274 DEBUG 34500 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 2
+2021-01-05 11:18:36.469  INFO 34500 --- [http-nio-18080-exec-5] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/moveProcess
+2021-01-05 11:18:36.471 DEBUG 34500 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.queryById        : ==>  Preparing: SELECT * FROM work_order WHERE id = ?
+2021-01-05 11:18:36.471 DEBUG 34500 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.queryById        : ==> Parameters: 8(Integer)
+2021-01-05 11:18:36.473 DEBUG 34500 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.queryById        : <==      Total: 1
+2021-01-05 11:19:00.140 DEBUG 34500 --- [http-nio-18080-exec-5] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 11:19:00.146 DEBUG 34500 --- [http-nio-18080-exec-5] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: zhangsan(String)
+2021-01-05 11:19:00.167 DEBUG 34500 --- [http-nio-18080-exec-5] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 11:19:03.862 DEBUG 34500 --- [http-nio-18080-exec-5] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 11:19:03.869 DEBUG 34500 --- [http-nio-18080-exec-5] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: lisi(String)
+2021-01-05 11:19:03.883 DEBUG 34500 --- [http-nio-18080-exec-5] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 11:19:55.420  WARN 34500 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s419ms293µs).
+2021-01-05 11:20:29.743 DEBUG 34500 --- [http-nio-18080-exec-5] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 11:20:29.747 DEBUG 34500 --- [http-nio-18080-exec-5] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: wangwu(String)
+2021-01-05 11:20:29.759 DEBUG 34500 --- [http-nio-18080-exec-5] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 11:21:32.293  INFO 34500 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 11:21:32.293  INFO 34500 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 11:21:32.293  INFO 34500 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 11:21:32.293  INFO 34500 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 11:21:32.293  INFO 34500 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 11:21:32.293  INFO 34500 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 11:21:32.293  INFO 34500 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 11:21:48.954  INFO 11392 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 11392 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 11:21:48.954 DEBUG 11392 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 11:21:48.954  INFO 11392 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 11:21:49.715  INFO 11392 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 11:21:49.715  INFO 11392 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 11:21:49.715  INFO 11392 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 11:21:49.715  INFO 11392 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 11:21:49.715  INFO 11392 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 11:21:49.715  INFO 11392 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 11:21:49.715  INFO 11392 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 11:21:50.759  INFO 11392 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 11:21:50.853  INFO 11392 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 11:21:50.853  INFO 11392 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1867 ms
+2021-01-05 11:21:51.099  INFO 11392 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 11:21:51.158  INFO 11392 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 11:21:51.159  WARN 11392 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 11:21:51.355  INFO 11392 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 11:21:51.717  INFO 11392 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 11:21:51.764  INFO 11392 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 11:21:51.764  INFO 11392 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 11:21:51.764  INFO 11392 --- [Thread-7] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 11:21:51.764  INFO 11392 --- [Thread-5] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 11:21:51.764  INFO 11392 --- [Thread-6] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 11:21:52.014  INFO 11392 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 11:21:52.029  INFO 11392 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.433 seconds (JVM running for 4.256)
+2021-01-05 11:26:30.099  INFO 11392 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 11:26:30.099  INFO 11392 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 11:26:30.099  INFO 11392 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 11:26:30.099  INFO 11392 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 11:26:30.099  INFO 11392 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 11:26:30.099  INFO 11392 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 11:26:30.114  INFO 11392 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 11:26:34.180  INFO 1596 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 1596 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 11:26:34.180 DEBUG 1596 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 11:26:34.180  INFO 1596 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 11:26:34.928  INFO 1596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 11:26:34.943  INFO 1596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 11:26:34.943  INFO 1596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 11:26:34.943  INFO 1596 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 11:26:34.943  INFO 1596 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 11:26:34.943  INFO 1596 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 11:26:34.943  INFO 1596 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 11:26:35.990  INFO 1596 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 11:26:36.084  INFO 1596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 11:26:36.084  INFO 1596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1857 ms
+2021-01-05 11:26:36.328  INFO 1596 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 11:26:36.375  INFO 1596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 11:26:36.375  WARN 1596 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 11:26:36.550  INFO 1596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 11:26:36.910  INFO 1596 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 11:26:36.956  INFO 1596 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 11:26:36.956  INFO 1596 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 11:26:36.956  INFO 1596 --- [Thread-7] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 11:26:36.956  INFO 1596 --- [Thread-8] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 11:26:36.956  INFO 1596 --- [Thread-9] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 11:26:37.230  INFO 1596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 11:26:37.245  INFO 1596 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.408 seconds (JVM running for 4.229)
+2021-01-05 11:26:40.624  INFO 1596 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 11:26:40.624  INFO 1596 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 11:26:40.625  INFO 1596 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-05 11:26:40.866  INFO 1596 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 11:26:40.889  INFO 1596 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 11:26:40.895 DEBUG 1596 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 11:26:40.899 DEBUG 1596 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 11:26:40.904 DEBUG 1596 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 11:26:40.967  INFO 1596 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 11:26:40.977  INFO 1596 --- [http-nio-18080-exec-5] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 11:26:41.022 DEBUG 1596 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 11:26:41.022 DEBUG 1596 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 11:26:41.022 DEBUG 1596 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 11:26:41.022 DEBUG 1596 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 11:26:41.023 DEBUG 1596 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 11:26:41.024 DEBUG 1596 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 11:26:41.024 DEBUG 1596 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 11:26:41.026 DEBUG 1596 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 11:26:41.030 DEBUG 1596 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 11:26:41.030 DEBUG 1596 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 11:26:41.030 DEBUG 1596 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 11:26:41.033 DEBUG 1596 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 2
+2021-01-05 11:26:43.399  INFO 1596 --- [http-nio-18080-exec-6] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/moveProcess
+2021-01-05 11:26:43.414 DEBUG 1596 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : ==>  Preparing: SELECT * FROM work_order WHERE id = ?
+2021-01-05 11:26:43.414 DEBUG 1596 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : ==> Parameters: 8(Integer)
+2021-01-05 11:26:43.415 DEBUG 1596 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : <==      Total: 1
+2021-01-05 11:26:43.486 DEBUG 1596 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 11:26:43.486 DEBUG 1596 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: zhangsan(String)
+2021-01-05 11:26:43.487 DEBUG 1596 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 11:26:43.487 DEBUG 1596 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 11:26:43.487 DEBUG 1596 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: lisi(String)
+2021-01-05 11:26:43.488 DEBUG 1596 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 11:26:43.488 DEBUG 1596 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 11:26:43.488 DEBUG 1596 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: wangwu(String)
+2021-01-05 11:26:43.488 DEBUG 1596 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 11:27:30.270  INFO 1596 --- [http-nio-18080-exec-7] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/moveProcess
+2021-01-05 11:27:30.271 DEBUG 1596 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.queryById        : ==>  Preparing: SELECT * FROM work_order WHERE id = ?
+2021-01-05 11:27:30.271 DEBUG 1596 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.queryById        : ==> Parameters: 8(Integer)
+2021-01-05 11:27:30.272 DEBUG 1596 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.queryById        : <==      Total: 1
+2021-01-05 11:27:30.276 DEBUG 1596 --- [http-nio-18080-exec-7] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 11:27:30.276 DEBUG 1596 --- [http-nio-18080-exec-7] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: zhangsan(String)
+2021-01-05 11:27:30.277 DEBUG 1596 --- [http-nio-18080-exec-7] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 11:27:30.277 DEBUG 1596 --- [http-nio-18080-exec-7] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 11:27:30.277 DEBUG 1596 --- [http-nio-18080-exec-7] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: lisi(String)
+2021-01-05 11:27:30.277 DEBUG 1596 --- [http-nio-18080-exec-7] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 11:27:30.279 DEBUG 1596 --- [http-nio-18080-exec-7] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 11:27:30.279 DEBUG 1596 --- [http-nio-18080-exec-7] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: wangwu(String)
+2021-01-05 11:27:30.279 DEBUG 1596 --- [http-nio-18080-exec-7] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 11:34:56.845  INFO 1596 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 11:34:56.845  INFO 1596 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 11:34:56.845  INFO 1596 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 11:34:56.845  INFO 1596 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 11:34:56.845  INFO 1596 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 11:34:56.845  INFO 1596 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 11:34:56.845  INFO 1596 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 11:35:00.600  INFO 10132 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 10132 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 11:35:00.600 DEBUG 10132 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 11:35:00.600  INFO 10132 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 11:35:01.388  INFO 10132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 11:35:01.388  INFO 10132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 11:35:01.388  INFO 10132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 11:35:01.388  INFO 10132 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 11:35:01.388  INFO 10132 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 11:35:01.388  INFO 10132 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 11:35:01.388  INFO 10132 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 11:35:02.433  INFO 10132 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 11:35:02.536  INFO 10132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 11:35:02.536  INFO 10132 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1886 ms
+2021-01-05 11:35:02.786  INFO 10132 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 11:35:02.836  INFO 10132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 11:35:02.852  WARN 10132 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 11:35:03.039  INFO 10132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 11:35:03.498  INFO 10132 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 11:35:03.544  INFO 10132 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 11:35:03.544  INFO 10132 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 11:35:03.560  INFO 10132 --- [Thread-7] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 11:35:03.560  INFO 10132 --- [Thread-9] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 11:35:03.560  INFO 10132 --- [Thread-8] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 11:35:03.877  INFO 10132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 11:35:03.894  INFO 10132 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.653 seconds (JVM running for 4.525)
+2021-01-05 11:35:11.695  INFO 10132 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 11:35:11.695  INFO 10132 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 11:35:11.696  INFO 10132 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-05 11:35:11.917  INFO 10132 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 11:35:11.933  INFO 10132 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 11:35:11.938 DEBUG 10132 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 11:35:11.943 DEBUG 10132 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 11:35:11.948 DEBUG 10132 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 11:35:12.006  INFO 10132 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 11:35:12.016  INFO 10132 --- [http-nio-18080-exec-5] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 11:35:12.059 DEBUG 10132 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 11:35:12.059 DEBUG 10132 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 11:35:12.059 DEBUG 10132 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 11:35:12.059 DEBUG 10132 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 11:35:12.060 DEBUG 10132 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 11:35:12.061 DEBUG 10132 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 11:35:12.061 DEBUG 10132 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 11:35:12.063 DEBUG 10132 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 11:35:12.066 DEBUG 10132 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 11:35:12.067 DEBUG 10132 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.USER_ID_) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 11:35:12.068 DEBUG 10132 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 11:35:12.085 DEBUG 10132 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 2
+2021-01-05 11:38:14.265  INFO 10132 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 11:38:14.265  INFO 10132 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 11:38:14.265  INFO 10132 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 11:38:14.265  INFO 10132 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 11:38:14.266  INFO 10132 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 11:38:14.266  INFO 10132 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 11:38:14.270  INFO 10132 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 11:38:17.785  INFO 25908 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 25908 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 11:38:17.787 DEBUG 25908 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 11:38:17.788  INFO 25908 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 11:38:18.634  INFO 25908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 11:38:18.641  INFO 25908 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 11:38:18.641  INFO 25908 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 11:38:18.643  INFO 25908 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 11:38:18.643  INFO 25908 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 11:38:18.643  INFO 25908 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 11:38:18.643  INFO 25908 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 11:38:19.691  INFO 25908 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 11:38:19.788  INFO 25908 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 11:38:19.788  INFO 25908 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1962 ms
+2021-01-05 11:38:20.054  INFO 25908 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 11:38:20.114  INFO 25908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 11:38:20.115  WARN 25908 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 11:38:20.282  INFO 25908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 11:38:20.661  INFO 25908 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 11:38:20.707  INFO 25908 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 11:38:20.707  INFO 25908 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 11:38:20.708  INFO 25908 --- [Thread-8] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 11:38:20.708  INFO 25908 --- [Thread-9] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 11:38:20.708  INFO 25908 --- [Thread-10] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 11:38:20.992  INFO 25908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 11:38:20.998  INFO 25908 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.597 seconds (JVM running for 4.546)
+2021-01-05 11:38:30.795  INFO 25908 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 11:38:30.795  INFO 25908 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 11:38:30.796  INFO 25908 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-05 11:38:31.081  INFO 25908 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 11:38:31.099  INFO 25908 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 11:38:31.106 DEBUG 25908 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 11:38:31.110 DEBUG 25908 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 11:38:31.116 DEBUG 25908 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 11:38:31.184  INFO 25908 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 11:38:31.197  INFO 25908 --- [http-nio-18080-exec-5] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 11:38:31.245 DEBUG 25908 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 11:38:31.245 DEBUG 25908 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 11:38:31.246 DEBUG 25908 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 11:38:31.246 DEBUG 25908 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 11:38:31.247 DEBUG 25908 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 11:38:31.248 DEBUG 25908 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 11:38:31.248 DEBUG 25908 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 11:38:31.250 DEBUG 25908 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 11:38:31.254 DEBUG 25908 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 11:38:31.255 DEBUG 25908 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.USER_ID_) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 11:38:31.255 DEBUG 25908 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 11:38:31.260 DEBUG 25908 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 2
+2021-01-05 12:12:24.054  INFO 25908 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 12:12:24.054  INFO 25908 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 12:12:24.054  INFO 25908 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 12:12:24.054  INFO 25908 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 12:12:24.055  INFO 25908 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 12:12:24.055  INFO 25908 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 12:12:24.060  INFO 25908 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 13:30:34.249  INFO 33252 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 33252 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 13:30:34.251 DEBUG 33252 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 13:30:34.252  INFO 33252 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 13:30:35.038  INFO 33252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 13:30:35.045  INFO 33252 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 13:30:35.045  INFO 33252 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 13:30:35.046  INFO 33252 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 13:30:35.046  INFO 33252 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 13:30:35.047  INFO 33252 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 13:30:35.047  INFO 33252 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 13:30:36.092  INFO 33252 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 13:30:36.177  INFO 33252 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 13:30:36.177  INFO 33252 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1890 ms
+2021-01-05 13:30:36.421  INFO 33252 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 13:30:36.480  INFO 33252 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 13:30:36.481  WARN 33252 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 13:30:36.646  INFO 33252 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 13:30:37.004  INFO 33252 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 13:30:37.051  INFO 33252 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 13:30:37.052  INFO 33252 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 13:30:37.053  INFO 33252 --- [Thread-9] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 13:30:37.053  INFO 33252 --- [Thread-7] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 13:30:37.053  INFO 33252 --- [Thread-8] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 13:30:37.360  INFO 33252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 13:30:37.368  INFO 33252 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.455 seconds (JVM running for 4.307)
+2021-01-05 13:30:44.358  INFO 33252 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 13:30:44.358  INFO 33252 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 13:30:44.359  INFO 33252 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-05 13:30:44.596  INFO 33252 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 13:30:44.610  INFO 33252 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 13:30:44.616 DEBUG 33252 --- [http-nio-18080-exec-4] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 13:30:44.621 DEBUG 33252 --- [http-nio-18080-exec-4] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 13:30:44.626 DEBUG 33252 --- [http-nio-18080-exec-4] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 13:30:44.694  INFO 33252 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 13:30:44.702  INFO 33252 --- [http-nio-18080-exec-6] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 13:30:44.747 DEBUG 33252 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 13:30:44.748 DEBUG 33252 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 13:30:44.748 DEBUG 33252 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 13:30:44.748 DEBUG 33252 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 13:30:44.749 DEBUG 33252 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 13:30:44.750 DEBUG 33252 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 13:30:44.750 DEBUG 33252 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 13:30:44.750 DEBUG 33252 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 13:30:44.750 DEBUG 33252 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.USER_ID_) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 13:30:44.750 DEBUG 33252 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 13:30:44.752 DEBUG 33252 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 13:30:44.756 DEBUG 33252 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 2
+2021-01-05 13:36:37.090  INFO 33252 --- [http-nio-18080-exec-8] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 13:36:37.091 DEBUG 33252 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND (v.ASSIGNEE_ = ? OR v.USER_ID_ = ?) AND t1.processName = ?
+2021-01-05 13:36:37.092 DEBUG 33252 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: zhangsan(String), zhangsan(String), A_001(String)
+2021-01-05 13:36:37.093 DEBUG 33252 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 13:36:37.094 DEBUG 33252 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.USER_ID_) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND (v.ASSIGNEE_ = ? OR v.USER_ID_ = ?) AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 13:36:37.094 DEBUG 33252 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: zhangsan(String), zhangsan(String), A_001(String), 0(Integer), 10(Integer)
+2021-01-05 13:36:37.096 DEBUG 33252 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 1
+2021-01-05 13:37:56.570  INFO 33252 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 13:37:56.570  INFO 33252 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 13:37:56.570  INFO 33252 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 13:37:56.570  INFO 33252 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 13:37:56.571  INFO 33252 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 13:37:56.571  INFO 33252 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 13:37:56.575  INFO 33252 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 14:25:07.672  INFO 34092 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 34092 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 14:25:07.675 DEBUG 34092 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 14:25:07.675  INFO 34092 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 14:25:08.461  INFO 34092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 14:25:08.467  INFO 34092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 14:25:08.467  INFO 34092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 14:25:08.468  INFO 34092 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 14:25:08.468  INFO 34092 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 14:25:08.468  INFO 34092 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 14:25:08.468  INFO 34092 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 14:25:09.514  INFO 34092 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 14:25:09.596  INFO 34092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 14:25:09.596  INFO 34092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1883 ms
+2021-01-05 14:25:09.847  INFO 34092 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 14:25:09.905  INFO 34092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 14:25:09.907  WARN 34092 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 14:25:10.084  INFO 34092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 14:25:10.452  INFO 34092 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 14:25:10.512  INFO 34092 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 14:25:10.513  INFO 34092 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 14:25:10.514  INFO 34092 --- [Thread-7] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 14:25:10.514  INFO 34092 --- [Thread-8] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 14:25:10.515  INFO 34092 --- [Thread-9] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 14:25:10.797  INFO 34092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 14:25:10.805  INFO 34092 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.479 seconds (JVM running for 4.346)
+2021-01-05 14:27:19.848  INFO 34092 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 14:27:19.848  INFO 34092 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 14:27:19.849  INFO 34092 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-05 14:27:20.094  INFO 34092 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 14:27:20.121  INFO 34092 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 14:27:20.127 DEBUG 34092 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 14:27:20.131 DEBUG 34092 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 14:27:20.138 DEBUG 34092 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 14:27:20.202  INFO 34092 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 14:27:20.212  INFO 34092 --- [http-nio-18080-exec-5] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 14:27:20.255 DEBUG 34092 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 14:27:20.255 DEBUG 34092 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 14:27:20.255 DEBUG 34092 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 14:27:20.255 DEBUG 34092 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 14:27:20.257 DEBUG 34092 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 14:27:20.258 DEBUG 34092 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 14:27:20.258 DEBUG 34092 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 14:27:20.259 DEBUG 34092 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 14:27:20.265 DEBUG 34092 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 14:27:20.266 DEBUG 34092 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.USER_ID_) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 14:27:20.266 DEBUG 34092 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 14:27:20.271 DEBUG 34092 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 2
+2021-01-05 14:28:29.579  INFO 34092 --- [http-nio-18080-exec-8] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/approvalProcess
+2021-01-05 14:28:29.599  WARN 34092 --- [http-nio-18080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.alibaba.fastjson.JSONObject` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('spRadio=0&spResult=%E5%A4%A7%E6%92%92%E5%A4%A7%E6%92%92&workId=8&taskId=8'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.alibaba.fastjson.JSONObject` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('spRadio=0&spResult=%E5%A4%A7%E6%92%92%E5%A4%A7%E6%92%92&workId=8&taskId=8')
+ at [Source: (PushbackInputStream); line: 1, column: 1]]
+2021-01-05 14:28:29.602  INFO 34092 --- [http-nio-18080-exec-8] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/error
+2021-01-05 14:35:23.634  INFO 34092 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 14:35:23.635  INFO 34092 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 14:35:23.635  INFO 34092 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 14:35:23.635  INFO 34092 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 14:35:23.636  INFO 34092 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 14:35:23.636  INFO 34092 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 14:35:23.641  INFO 34092 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 14:35:27.083  INFO 33804 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 33804 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 14:35:27.086 DEBUG 33804 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 14:35:27.086  INFO 33804 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 14:35:27.861  INFO 33804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 14:35:27.867  INFO 33804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 14:35:27.867  INFO 33804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 14:35:27.868  INFO 33804 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 14:35:27.868  INFO 33804 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 14:35:27.868  INFO 33804 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 14:35:27.869  INFO 33804 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 14:35:28.922  INFO 33804 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 14:35:29.007  INFO 33804 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 14:35:29.007  INFO 33804 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1886 ms
+2021-01-05 14:35:29.252  INFO 33804 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 14:35:29.310  INFO 33804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 14:35:29.311  WARN 33804 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 14:35:29.475  INFO 33804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 14:35:29.832  INFO 33804 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 14:35:29.872  INFO 33804 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 14:35:29.872  INFO 33804 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 14:35:29.872  INFO 33804 --- [Thread-7] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 14:35:29.872  INFO 33804 --- [Thread-9] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 14:35:29.873  INFO 33804 --- [Thread-8] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 14:35:30.144  INFO 33804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 14:35:30.152  INFO 33804 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.4 seconds (JVM running for 4.232)
+2021-01-05 14:35:40.413  INFO 33804 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 14:35:40.413  INFO 33804 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 14:35:40.414  INFO 33804 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-05 14:35:40.653  INFO 33804 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 14:35:40.680  INFO 33804 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 14:35:40.685 DEBUG 33804 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 14:35:40.690 DEBUG 33804 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 14:35:40.695 DEBUG 33804 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 14:35:40.765  INFO 33804 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 14:35:40.777  INFO 33804 --- [http-nio-18080-exec-5] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 14:35:40.823 DEBUG 33804 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 14:35:40.823 DEBUG 33804 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 14:35:40.823 DEBUG 33804 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 14:35:40.823 DEBUG 33804 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 14:35:40.824 DEBUG 33804 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 14:35:40.824 DEBUG 33804 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 14:35:40.825 DEBUG 33804 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 14:35:40.825 DEBUG 33804 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.USER_ID_) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 14:35:40.825 DEBUG 33804 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 14:35:40.825 DEBUG 33804 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 14:35:40.827 DEBUG 33804 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 14:35:40.833 DEBUG 33804 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 2
+2021-01-05 14:35:51.834  INFO 33804 --- [http-nio-18080-exec-6] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/approvalProcess
+2021-01-05 14:41:46.531  INFO 33804 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 14:41:46.531  INFO 33804 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 14:41:46.531  INFO 33804 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 14:41:46.531  INFO 33804 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 14:41:46.532  INFO 33804 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 14:41:46.532  INFO 33804 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 14:41:46.536  INFO 33804 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 17:16:25.596  INFO 5628 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 5628 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 17:16:25.599 DEBUG 5628 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 17:16:25.600  INFO 5628 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 17:16:26.409  INFO 5628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 17:16:26.416  INFO 5628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 17:16:26.416  INFO 5628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 17:16:26.417  INFO 5628 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 17:16:26.417  INFO 5628 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 17:16:26.417  INFO 5628 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 17:16:26.417  INFO 5628 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 17:16:27.492  INFO 5628 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 17:16:27.579  INFO 5628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 17:16:27.579  INFO 5628 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1945 ms
+2021-01-05 17:16:27.726  INFO 5628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 17:16:27.807  INFO 5628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 17:16:27.809  WARN 5628 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 17:16:27.959  INFO 5628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 17:16:28.524  INFO 5628 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 17:16:28.572  INFO 5628 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 17:16:28.573  INFO 5628 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 17:16:28.573  INFO 5628 --- [Thread-8] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 17:16:28.574  INFO 5628 --- [Thread-9] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 17:16:28.574  INFO 5628 --- [Thread-10] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 17:16:28.969  INFO 5628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 17:16:28.977  INFO 5628 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.795 seconds (JVM running for 4.749)
+2021-01-05 17:20:32.594  INFO 5628 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 17:20:32.595  INFO 5628 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 17:20:32.595  INFO 5628 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-05 17:20:32.863  INFO 5628 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 17:20:32.891  INFO 5628 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 17:20:32.897 DEBUG 5628 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 17:20:32.901 DEBUG 5628 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 17:20:32.907 DEBUG 5628 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 17:20:32.984  INFO 5628 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 17:20:32.994  INFO 5628 --- [http-nio-18080-exec-5] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 17:20:33.046 DEBUG 5628 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 17:20:33.046 DEBUG 5628 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 17:20:33.046 DEBUG 5628 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 17:20:33.046 DEBUG 5628 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 17:20:33.047 DEBUG 5628 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 17:20:33.047 DEBUG 5628 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 17:20:33.048 DEBUG 5628 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:20:33.048 DEBUG 5628 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.USER_ID_) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:20:33.048 DEBUG 5628 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:20:33.048 DEBUG 5628 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:20:33.050 DEBUG 5628 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 17:20:33.051 DEBUG 5628 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 2
+2021-01-05 17:20:44.570  INFO 5628 --- [http-nio-18080-exec-6] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 17:20:44.571 DEBUG 5628 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND (v.ASSIGNEE_ = ? OR v.USER_ID_ = ?) AND t1.processName = ?
+2021-01-05 17:20:44.571 DEBUG 5628 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: zhangsan(String), zhangsan(String), A_001(String)
+2021-01-05 17:20:44.573 DEBUG 5628 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 17:20:44.574 DEBUG 5628 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.USER_ID_) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND (v.ASSIGNEE_ = ? OR v.USER_ID_ = ?) AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:20:44.574 DEBUG 5628 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: zhangsan(String), zhangsan(String), A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:20:44.575 DEBUG 5628 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 1
+2021-01-05 17:20:59.901  INFO 5628 --- [http-nio-18080-exec-7] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/approvalProcess
+2021-01-05 17:20:59.902 DEBUG 5628 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.queryById        : ==>  Preparing: SELECT * FROM work_order WHERE id = ?
+2021-01-05 17:20:59.903 DEBUG 5628 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.queryById        : ==> Parameters: 8(Integer)
+2021-01-05 17:20:59.904 DEBUG 5628 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.queryById        : <==      Total: 1
+2021-01-05 17:20:59.975 DEBUG 5628 --- [http-nio-18080-exec-7] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 17:20:59.975 DEBUG 5628 --- [http-nio-18080-exec-7] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: zhangsan(String)
+2021-01-05 17:20:59.976 DEBUG 5628 --- [http-nio-18080-exec-7] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 17:21:01.282  INFO 5628 --- [http-nio-18080-exec-8] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 17:21:01.283 DEBUG 5628 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 17:21:01.283 DEBUG 5628 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 17:21:01.284 DEBUG 5628 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 17:21:01.284 DEBUG 5628 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:21:01.284 DEBUG 5628 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:21:01.286 DEBUG 5628 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 17:21:01.293  INFO 5628 --- [http-nio-18080-exec-9] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 17:21:01.294 DEBUG 5628 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND (v.ASSIGNEE_ = ? OR v.USER_ID_ = ?) AND t1.processName = ?
+2021-01-05 17:21:01.294 DEBUG 5628 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: zhangsan(String), zhangsan(String), A_001(String)
+2021-01-05 17:21:01.295 DEBUG 5628 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 17:21:01.295 DEBUG 5628 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.USER_ID_) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND (v.ASSIGNEE_ = ? OR v.USER_ID_ = ?) AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:21:01.296 DEBUG 5628 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: zhangsan(String), zhangsan(String), A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:21:01.297 DEBUG 5628 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 0
+2021-01-05 17:21:21.732  INFO 5628 --- [http-nio-18080-exec-10] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 17:21:21.733 DEBUG 5628 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 17:21:21.733 DEBUG 5628 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 17:21:21.734 DEBUG 5628 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 17:21:21.734 DEBUG 5628 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.USER_ID_) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:21:21.735 DEBUG 5628 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:21:21.736 DEBUG 5628 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 1
+2021-01-05 17:43:05.953  INFO 5628 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 17:43:05.953  INFO 5628 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 17:43:05.953  INFO 5628 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 17:43:05.953  INFO 5628 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 17:43:05.954  INFO 5628 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 17:43:05.955  INFO 5628 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 17:43:05.970  INFO 5628 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 17:43:11.806  INFO 6000 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 6000 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 17:43:11.809 DEBUG 6000 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 17:43:11.809  INFO 6000 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 17:43:12.553  INFO 6000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 17:43:12.559  INFO 6000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 17:43:12.559  INFO 6000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 17:43:12.561  INFO 6000 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 17:43:12.561  INFO 6000 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 17:43:12.561  INFO 6000 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 17:43:12.561  INFO 6000 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 17:43:13.613  INFO 6000 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 17:43:13.698  INFO 6000 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 17:43:13.698  INFO 6000 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1853 ms
+2021-01-05 17:43:13.797  INFO 6000 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 17:43:13.857  INFO 6000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 17:43:13.858  WARN 6000 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 17:43:13.977  INFO 6000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 17:43:14.487  INFO 6000 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 17:43:14.545  INFO 6000 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 17:43:14.546  INFO 6000 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 17:43:14.547  INFO 6000 --- [Thread-7] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 17:43:14.547  INFO 6000 --- [Thread-8] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 17:43:14.547  INFO 6000 --- [Thread-9] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 17:43:14.882  INFO 6000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 17:43:14.890  INFO 6000 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.43 seconds (JVM running for 4.285)
+2021-01-05 17:43:18.629  INFO 6000 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 17:43:18.629  INFO 6000 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 17:43:18.630  INFO 6000 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-05 17:43:18.864  INFO 6000 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 17:43:18.890  INFO 6000 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 17:43:18.897 DEBUG 6000 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 17:43:18.902 DEBUG 6000 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 17:43:18.911 DEBUG 6000 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 17:43:18.985  INFO 6000 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 17:43:18.995  INFO 6000 --- [http-nio-18080-exec-5] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 17:43:19.037 DEBUG 6000 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 17:43:19.037 DEBUG 6000 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 17:43:19.037 DEBUG 6000 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 17:43:19.037 DEBUG 6000 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 17:43:19.040 DEBUG 6000 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 17:43:19.040 DEBUG 6000 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 17:43:19.040 DEBUG 6000 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:43:19.040 DEBUG 6000 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.spUser) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:43:19.041 DEBUG 6000 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:43:19.041 DEBUG 6000 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:43:19.042 DEBUG 6000 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 17:43:19.043 DEBUG 6000 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 1
+2021-01-05 17:43:24.133  INFO 6000 --- [http-nio-18080-exec-6] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/moveProcess
+2021-01-05 17:43:24.134 DEBUG 6000 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : ==>  Preparing: SELECT * FROM work_order WHERE id = ?
+2021-01-05 17:43:24.135 DEBUG 6000 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : ==> Parameters: 8(Integer)
+2021-01-05 17:43:24.136 DEBUG 6000 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : <==      Total: 1
+2021-01-05 17:43:24.215 DEBUG 6000 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 17:43:24.216 DEBUG 6000 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: zhangsan(String)
+2021-01-05 17:43:24.216 DEBUG 6000 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 17:43:24.217 DEBUG 6000 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 17:43:24.217 DEBUG 6000 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: lisi(String)
+2021-01-05 17:43:24.217 DEBUG 6000 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 17:43:24.217 DEBUG 6000 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 17:43:24.217 DEBUG 6000 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: wangwu(String)
+2021-01-05 17:43:24.218 DEBUG 6000 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 17:43:37.259  INFO 6000 --- [http-nio-18080-exec-7] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 17:43:37.260 DEBUG 6000 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND v.spUser = ? AND t1.processName = ?
+2021-01-05 17:43:37.260 DEBUG 6000 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: lisi(String), A_001(String)
+2021-01-05 17:43:37.261 DEBUG 6000 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 17:43:37.263 DEBUG 6000 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.spUser) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND v.spUser = ? AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:43:37.263 DEBUG 6000 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: lisi(String), A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:43:37.264 DEBUG 6000 --- [http-nio-18080-exec-7] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 0
+2021-01-05 17:43:39.769  INFO 6000 --- [http-nio-18080-exec-8] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 17:43:39.770 DEBUG 6000 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND v.spUser = ? AND t1.processName = ?
+2021-01-05 17:43:39.770 DEBUG 6000 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: wangwu(String), A_001(String)
+2021-01-05 17:43:39.771 DEBUG 6000 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 17:43:39.772 DEBUG 6000 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.spUser) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND v.spUser = ? AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:43:39.772 DEBUG 6000 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: wangwu(String), A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:43:39.774 DEBUG 6000 --- [http-nio-18080-exec-8] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 1
+2021-01-05 17:43:44.212  INFO 6000 --- [http-nio-18080-exec-9] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 17:43:44.213 DEBUG 6000 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 17:43:44.214 DEBUG 6000 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 17:43:44.215 DEBUG 6000 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 17:43:44.216 DEBUG 6000 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.spUser) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:43:44.216 DEBUG 6000 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:43:44.217 DEBUG 6000 --- [http-nio-18080-exec-9] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 1
+2021-01-05 17:43:53.013  INFO 6000 --- [http-nio-18080-exec-10] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/approvalProcess
+2021-01-05 17:43:53.014 DEBUG 6000 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.queryById        : ==>  Preparing: SELECT * FROM work_order WHERE id = ?
+2021-01-05 17:43:53.014 DEBUG 6000 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.queryById        : ==> Parameters: 8(Integer)
+2021-01-05 17:43:53.015 DEBUG 6000 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.queryById        : <==      Total: 1
+2021-01-05 17:43:53.029 DEBUG 6000 --- [http-nio-18080-exec-10] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 17:43:53.029 DEBUG 6000 --- [http-nio-18080-exec-10] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: admin(String)
+2021-01-05 17:43:53.030 DEBUG 6000 --- [http-nio-18080-exec-10] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 17:43:53.148 DEBUG 6000 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.updateData       : ==>  Preparing: UPDATE work_order SET status = ?, processId = ? WHERE id = ?
+2021-01-05 17:43:53.148 DEBUG 6000 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.updateData       : ==> Parameters: 3(String), 4(String), 8(Integer)
+2021-01-05 17:43:53.150 DEBUG 6000 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.updateData       : <==    Updates: 1
+2021-01-05 17:43:54.326  INFO 6000 --- [http-nio-18080-exec-1] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 17:43:54.327 DEBUG 6000 --- [http-nio-18080-exec-1] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 17:43:54.327 DEBUG 6000 --- [http-nio-18080-exec-1] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 17:43:54.328 DEBUG 6000 --- [http-nio-18080-exec-1] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 17:43:54.328 DEBUG 6000 --- [http-nio-18080-exec-1] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:43:54.328 DEBUG 6000 --- [http-nio-18080-exec-1] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:43:54.332 DEBUG 6000 --- [http-nio-18080-exec-1] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 17:43:54.336  INFO 6000 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 17:43:54.337 DEBUG 6000 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 17:43:54.337 DEBUG 6000 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 17:43:54.338 DEBUG 6000 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 17:43:54.339 DEBUG 6000 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.spUser) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:43:54.339 DEBUG 6000 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:43:54.340 DEBUG 6000 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 0
+2021-01-05 17:52:44.237  INFO 6000 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 17:52:44.237  INFO 6000 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 17:52:44.237  INFO 6000 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 17:52:44.237  INFO 6000 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 17:52:44.238  INFO 6000 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 17:52:44.238  INFO 6000 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 17:52:44.242  INFO 6000 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 17:52:47.693  INFO 27548 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 27548 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 17:52:47.696 DEBUG 27548 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 17:52:47.696  INFO 27548 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 17:52:48.438  INFO 27548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 17:52:48.444  INFO 27548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 17:52:48.444  INFO 27548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 17:52:48.445  INFO 27548 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 17:52:48.446  INFO 27548 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 17:52:48.446  INFO 27548 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 17:52:48.446  INFO 27548 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 17:52:49.485  INFO 27548 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 17:52:49.592  INFO 27548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 17:52:49.593  INFO 27548 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1861 ms
+2021-01-05 17:52:49.691  INFO 27548 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 17:52:49.751  INFO 27548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 17:52:49.752  WARN 27548 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 17:52:49.887  INFO 27548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 17:52:50.407  INFO 27548 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 17:52:50.449  INFO 27548 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 17:52:50.449  INFO 27548 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 17:52:50.450  INFO 27548 --- [Thread-9] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 17:52:50.450  INFO 27548 --- [Thread-7] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 17:52:50.450  INFO 27548 --- [Thread-8] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 17:52:50.782  INFO 27548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 17:52:50.790  INFO 27548 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.445 seconds (JVM running for 4.289)
+2021-01-05 17:52:53.777  INFO 27548 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 17:52:53.778  INFO 27548 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 17:52:53.778  INFO 27548 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-05 17:52:54.052  INFO 27548 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 17:52:54.058 DEBUG 27548 --- [http-nio-18080-exec-2] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 17:52:54.063 DEBUG 27548 --- [http-nio-18080-exec-2] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 17:52:54.068 DEBUG 27548 --- [http-nio-18080-exec-2] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 17:52:54.140  INFO 27548 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 17:52:54.148  INFO 27548 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 17:52:54.192 DEBUG 27548 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 17:52:54.192 DEBUG 27548 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 17:52:54.193 DEBUG 27548 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 17:52:54.193 DEBUG 27548 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 17:52:54.194 DEBUG 27548 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 17:52:54.194 DEBUG 27548 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 17:52:54.194 DEBUG 27548 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:52:54.195 DEBUG 27548 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:52:54.195 DEBUG 27548 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.spUser) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:52:54.195 DEBUG 27548 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:52:54.196 DEBUG 27548 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 17:52:54.199 DEBUG 27548 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 0
+2021-01-05 17:54:07.795  INFO 27548 --- [http-nio-18080-exec-8] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 17:54:07.981  INFO 27548 --- [http-nio-18080-exec-9] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 17:54:07.981 DEBUG 27548 --- [http-nio-18080-exec-9] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 17:54:07.982 DEBUG 27548 --- [http-nio-18080-exec-9] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 17:54:07.983 DEBUG 27548 --- [http-nio-18080-exec-9] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 17:54:08.002  INFO 27548 --- [http-nio-18080-exec-10] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 17:54:08.003 DEBUG 27548 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 17:54:08.003 DEBUG 27548 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 17:54:08.004 DEBUG 27548 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 17:54:08.005 DEBUG 27548 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:54:08.005 DEBUG 27548 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:54:08.006 DEBUG 27548 --- [http-nio-18080-exec-10] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 17:54:08.010  INFO 27548 --- [http-nio-18080-exec-1] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 17:54:08.011 DEBUG 27548 --- [http-nio-18080-exec-1] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 17:54:08.011 DEBUG 27548 --- [http-nio-18080-exec-1] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 17:54:08.012 DEBUG 27548 --- [http-nio-18080-exec-1] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 17:54:08.013 DEBUG 27548 --- [http-nio-18080-exec-1] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.spUser) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 17:54:08.013 DEBUG 27548 --- [http-nio-18080-exec-1] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 17:54:08.014 DEBUG 27548 --- [http-nio-18080-exec-1] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 0
+2021-01-05 17:54:10.958  INFO 27548 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/moveProcess
+2021-01-05 17:54:10.959 DEBUG 27548 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.queryById        : ==>  Preparing: SELECT * FROM work_order WHERE id = ?
+2021-01-05 17:54:10.959 DEBUG 27548 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.queryById        : ==> Parameters: 8(Integer)
+2021-01-05 17:54:10.960 DEBUG 27548 --- [http-nio-18080-exec-2] c.y.w.dao.IWorkOrderDao.queryById        : <==      Total: 1
+2021-01-05 18:02:10.037  WARN 27548 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m49s164ms770µs500ns).
+2021-01-05 18:02:10.038 DEBUG 27548 --- [http-nio-18080-exec-2] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 18:02:10.038 DEBUG 27548 --- [http-nio-18080-exec-2] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: zhangsan(String)
+2021-01-05 18:02:10.051 DEBUG 27548 --- [http-nio-18080-exec-2] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 18:02:10.052 DEBUG 27548 --- [http-nio-18080-exec-2] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 18:02:10.052 DEBUG 27548 --- [http-nio-18080-exec-2] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: lisi(String)
+2021-01-05 18:02:10.053 DEBUG 27548 --- [http-nio-18080-exec-2] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 18:02:10.053 DEBUG 27548 --- [http-nio-18080-exec-2] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 18:02:10.053 DEBUG 27548 --- [http-nio-18080-exec-2] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: wangwu(String)
+2021-01-05 18:02:10.054 DEBUG 27548 --- [http-nio-18080-exec-2] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 18:10:55.261  INFO 27548 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 18:10:55.262  INFO 27548 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 18:10:55.262  INFO 27548 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 18:10:55.262  INFO 27548 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 18:10:55.263  INFO 27548 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 18:10:55.263  INFO 27548 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 18:10:55.268  INFO 27548 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 18:10:58.540  INFO 10984 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 10984 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 18:10:58.542 DEBUG 10984 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 18:10:58.542  INFO 10984 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 18:10:59.311  INFO 10984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 18:10:59.317  INFO 10984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 18:10:59.318  INFO 10984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 18:10:59.319  INFO 10984 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 18:10:59.319  INFO 10984 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 18:10:59.319  INFO 10984 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 18:10:59.319  INFO 10984 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 18:11:00.358  INFO 10984 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 18:11:00.442  INFO 10984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 18:11:00.443  INFO 10984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1860 ms
+2021-01-05 18:11:00.537  INFO 10984 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 18:11:00.595  INFO 10984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 18:11:00.597  WARN 10984 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 18:11:00.714  INFO 10984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 18:11:01.214  INFO 10984 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 18:11:01.253  INFO 10984 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 18:11:01.254  INFO 10984 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 18:11:01.255  INFO 10984 --- [Thread-7] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 18:11:01.255  INFO 10984 --- [Thread-8] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 18:11:01.255  INFO 10984 --- [Thread-9] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 18:11:01.579  INFO 10984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 18:11:01.587  INFO 10984 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.413 seconds (JVM running for 4.243)
+2021-01-05 18:11:05.341  INFO 10984 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 18:11:05.341  INFO 10984 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 18:11:05.342  INFO 10984 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-05 18:11:05.591  INFO 10984 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 18:11:05.610  INFO 10984 --- [http-nio-18080-exec-5] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 18:11:05.616 DEBUG 10984 --- [http-nio-18080-exec-5] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 18:11:05.622 DEBUG 10984 --- [http-nio-18080-exec-5] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 18:11:05.627 DEBUG 10984 --- [http-nio-18080-exec-5] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 18:11:05.692  INFO 10984 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 18:11:05.702  INFO 10984 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 18:11:05.744 DEBUG 10984 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 18:11:05.745 DEBUG 10984 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 18:11:05.745 DEBUG 10984 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 18:11:05.745 DEBUG 10984 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 18:11:05.746 DEBUG 10984 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 18:11:05.746 DEBUG 10984 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 18:11:05.747 DEBUG 10984 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 18:11:05.747 DEBUG 10984 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.spUser) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 18:11:05.748 DEBUG 10984 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 18:11:05.748 DEBUG 10984 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 18:11:05.750 DEBUG 10984 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 18:11:05.752 DEBUG 10984 --- [http-nio-18080-exec-3] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 0
+2021-01-05 18:11:07.568  INFO 10984 --- [http-nio-18080-exec-6] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/moveProcess
+2021-01-05 18:11:07.570 DEBUG 10984 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : ==>  Preparing: SELECT * FROM work_order WHERE id = ?
+2021-01-05 18:11:07.570 DEBUG 10984 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : ==> Parameters: 8(Integer)
+2021-01-05 18:11:07.571 DEBUG 10984 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : <==      Total: 1
+2021-01-05 18:16:50.272  WARN 10984 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m49s442ms363µs200ns).
+2021-01-05 18:22:32.295  WARN 10984 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m42s22ms923µs700ns).
+2021-01-05 18:22:32.296 DEBUG 10984 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 18:22:32.297 DEBUG 10984 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: zhangsan(String)
+2021-01-05 18:22:32.299 DEBUG 10984 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 18:22:32.300 DEBUG 10984 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 18:22:32.300 DEBUG 10984 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: lisi(String)
+2021-01-05 18:22:32.301 DEBUG 10984 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 18:22:32.301 DEBUG 10984 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 18:22:32.301 DEBUG 10984 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: wangwu(String)
+2021-01-05 18:22:32.301 DEBUG 10984 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 18:22:32.565  INFO 10984 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 18:22:32.565  INFO 10984 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 18:22:32.565  INFO 10984 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 18:22:32.565  INFO 10984 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 18:22:32.566  INFO 10984 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 18:22:32.566  INFO 10984 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 18:22:32.571  INFO 10984 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-05 18:22:37.723  INFO 27592 --- [main] com.yang.ActivityDemoApplication         : Starting ActivityDemoApplication using Java 1.8.0_111 on LAPTOP-EUKGL6OO with PID 27592 (D:\Plan2020\Workspace\IDEA_20\activity-demo\target\classes started by yang in D:\Plan2020\Workspace\IDEA_20\activity-demo)
+2021-01-05 18:22:37.726 DEBUG 27592 --- [main] com.yang.ActivityDemoApplication         : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-05 18:22:37.726  INFO 27592 --- [main] com.yang.ActivityDemoApplication         : No active profile set, falling back to default profiles: default
+2021-01-05 18:22:38.495  INFO 27592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2021-01-05 18:22:38.501  INFO 27592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 18:22:38.501  INFO 27592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-05 18:22:38.502  INFO 27592 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-01-05 18:22:38.502  INFO 27592 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-01-05 18:22:38.503  INFO 27592 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-05 18:22:38.503  INFO 27592 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-05 18:22:39.543  INFO 27592 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-01-05 18:22:39.626  INFO 27592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 18:22:39.626  INFO 27592 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1868 ms
+2021-01-05 18:22:39.725  INFO 27592 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 18:22:39.784  INFO 27592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 18:22:39.785  WARN 27592 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-05 18:22:39.905  INFO 27592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 18:22:40.407  INFO 27592 --- [main] aultActiviti5CompatibilityHandlerFactory : Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2021-01-05 18:22:40.470  INFO 27592 --- [main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2021-01-05 18:22:40.471  INFO 27592 --- [main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 18:22:40.472  INFO 27592 --- [Thread-7] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2021-01-05 18:22:40.472  INFO 27592 --- [Thread-9] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+2021-01-05 18:22:40.472  INFO 27592 --- [Thread-8] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2021-01-05 18:22:40.802  INFO 27592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
+2021-01-05 18:22:40.810  INFO 27592 --- [main] com.yang.ActivityDemoApplication         : Started ActivityDemoApplication in 3.435 seconds (JVM running for 4.333)
+2021-01-05 18:22:47.796  INFO 27592 --- [http-nio-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 18:22:47.797  INFO 27592 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 18:22:47.798  INFO 27592 --- [http-nio-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-05 18:22:48.029  INFO 27592 --- [http-nio-18080-exec-2] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/js/yang.js
+2021-01-05 18:22:48.049  INFO 27592 --- [http-nio-18080-exec-3] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/user/queryList
+2021-01-05 18:22:48.056 DEBUG 27592 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==>  Preparing: SELECT * FROM sys_user
+2021-01-05 18:22:48.061 DEBUG 27592 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : ==> Parameters: 
+2021-01-05 18:22:48.066 DEBUG 27592 --- [http-nio-18080-exec-3] com.yang.user.dao.IUserDao.queryList     : <==      Total: 5
+2021-01-05 18:22:48.131  INFO 27592 --- [http-nio-18080-exec-4] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/queryList
+2021-01-05 18:22:48.140  INFO 27592 --- [http-nio-18080-exec-5] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/querySpList
+2021-01-05 18:22:48.183 DEBUG 27592 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ?
+2021-01-05 18:22:48.183 DEBUG 27592 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==>  Preparing: SELECT COUNT(t1.id) FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ?
+2021-01-05 18:22:48.183 DEBUG 27592 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : ==> Parameters: A_001(String)
+2021-01-05 18:22:48.183 DEBUG 27592 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : ==> Parameters: A_001(String)
+2021-01-05 18:22:48.185 DEBUG 27592 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryCount       : <==      Total: 1
+2021-01-05 18:22:48.185 DEBUG 27592 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpCount     : <==      Total: 1
+2021-01-05 18:22:48.186 DEBUG 27592 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName FROM work_order t1, sys_user t2 WHERE t1.userName = t2.userName AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 18:22:48.186 DEBUG 27592 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==>  Preparing: SELECT t1.id, t1.sqNum, t1.startTime, t2.name userName, t1.status, t1.processId, t1.processName, v.taskId, (SELECT a.name FROM sys_user a WHERE a.userName = v.spUser) spName FROM work_order t1, sys_user t2, v_task v WHERE t1.userName = t2.userName AND t1.processId = v.PROC_INST_ID_ AND t1.status = '1' AND t1.processName = ? ORDER BY t1.startTime DESC LIMIT ?, ?
+2021-01-05 18:22:48.186 DEBUG 27592 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 18:22:48.186 DEBUG 27592 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : ==> Parameters: A_001(String), 0(Integer), 10(Integer)
+2021-01-05 18:22:48.188 DEBUG 27592 --- [http-nio-18080-exec-4] c.y.w.dao.IWorkOrderDao.queryList        : <==      Total: 7
+2021-01-05 18:22:48.194 DEBUG 27592 --- [http-nio-18080-exec-5] c.y.w.dao.IWorkOrderDao.querySpList      : <==      Total: 0
+2021-01-05 18:22:49.928  INFO 27592 --- [http-nio-18080-exec-6] com.yang.adapter.ApiHandlerInterceptor   : 访问路径：/workOrder/moveProcess
+2021-01-05 18:22:49.929 DEBUG 27592 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : ==>  Preparing: SELECT * FROM work_order WHERE id = ?
+2021-01-05 18:22:49.929 DEBUG 27592 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : ==> Parameters: 8(Integer)
+2021-01-05 18:22:49.930 DEBUG 27592 --- [http-nio-18080-exec-6] c.y.w.dao.IWorkOrderDao.queryById        : <==      Total: 1
+2021-01-05 18:23:01.464 DEBUG 27592 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 18:23:01.469 DEBUG 27592 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: zhangsan(String)
+2021-01-05 18:23:01.489 DEBUG 27592 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 18:23:07.342 DEBUG 27592 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 18:23:07.346 DEBUG 27592 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: lisi(String)
+2021-01-05 18:23:07.357 DEBUG 27592 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 18:24:11.686  WARN 27592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s954ms680µs500ns).
+2021-01-05 18:24:11.686 DEBUG 27592 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==>  Preparing: SELECT * FROM sys_user WHERE userName = ?
+2021-01-05 18:24:11.687 DEBUG 27592 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : ==> Parameters: wangwu(String)
+2021-01-05 18:24:11.688 DEBUG 27592 --- [http-nio-18080-exec-6] c.y.user.dao.IUserDao.queryByUserName    : <==      Total: 1
+2021-01-05 22:17:16.230  WARN 27592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h24m34s270ms201µs200ns).
+2021-01-05 22:32:31.304  INFO 27592 --- [SpringContextShutdownHook] o.a.e.i.a.DefaultAsyncJobExecutor        : Shutting down the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2021-01-05 22:32:31.305  INFO 27592 --- [activiti-acquire-timer-jobs] o.a.e.i.a.AcquireTimerJobsRunnable       : {} stopped async job due acquisition
+2021-01-05 22:32:31.305  INFO 27592 --- [activiti-reset-expired-jobs] o.a.e.i.a.ResetExpiredJobsRunnable       : {} stopped resetting expired jobs
+2021-01-05 22:32:31.305  INFO 27592 --- [activiti-acquire-async-jobs] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} stopped async job due acquisition
+2021-01-05 22:32:31.306  INFO 27592 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-05 22:32:31.306  INFO 27592 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-05 22:32:31.310  INFO 27592 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

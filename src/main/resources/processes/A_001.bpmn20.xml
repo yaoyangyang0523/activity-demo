@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions
+        xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:activiti="http://activiti.org/bpmn"
+        xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+        xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+        xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+        typeLanguage="http://www.w3.org/2001/XMLSchema"
+        expressionLanguage="http://www.w3.org/1999/XPath"
+        targetNamespace="http://www.activiti.org/test">
+    <process id="A_001" name="演示流程001" isExecutable="true">
+
+        <startEvent id="startEvent1" name="开始"></startEvent>
+
+        <userTask id="userTask1" name="T1:部门经理" activiti:candidateUsers="zhangsan,lisi"/>
+
+        <userTask id="userTask2" name="T2:总经理" activiti:assignee="wangwu"/>
+
+        <endEvent id="endEvent1" name="通过"></endEvent>
+        <endEvent id="endEvent2" name="未通过"></endEvent>
+
+        <exclusiveGateway id="wg1" name="G1:审批"></exclusiveGateway>
+
+        <exclusiveGateway id="wg2" name="G2:审批"></exclusiveGateway>
+
+        <sequenceFlow id="flow1" sourceRef="startEvent1" targetRef="userTask1"></sequenceFlow>
+
+        <sequenceFlow id="flow2" sourceRef="userTask1" targetRef="wg1"></sequenceFlow>
+
+        <sequenceFlow id="flow3" name="同意" sourceRef="wg1" targetRef="userTask2">
+            <conditionExpression xsi:type="tFormalExpression"><![CDATA[${status==1}]]></conditionExpression>
+        </sequenceFlow>
+
+        <sequenceFlow id="flow4" name="不同意" sourceRef="wg1" targetRef="endEvent2">
+            <conditionExpression xsi:type="tFormalExpression"><![CDATA[${status==0}]]></conditionExpression>
+        </sequenceFlow>
+
+        <sequenceFlow id="flow32" sourceRef="userTask2" targetRef="wg2"></sequenceFlow>
+
+        <sequenceFlow id="flow34" name="同意" sourceRef="wg2" targetRef="endEvent1">
+            <conditionExpression xsi:type="tFormalExpression"><![CDATA[${status==1}]]></conditionExpression>
+        </sequenceFlow>
+
+        <sequenceFlow id="flow35" name="不同意" sourceRef="wg2" targetRef="endEvent2">
+            <conditionExpression xsi:type="tFormalExpression"><![CDATA[${status==0}]]></conditionExpression>
+        </sequenceFlow>
+
+    </process>
+</definitions>
