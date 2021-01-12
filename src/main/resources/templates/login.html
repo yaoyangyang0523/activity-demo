@@ -24,8 +24,6 @@
         </div>
     </div>
 
-    <hr style="width: 100%; size: 5px; color: black; margin-top: 10px;">
-
     <ul id="myTab" class="nav nav-tabs">
         <li class="active"><a href="#ptWork" data-toggle="tab">申请工单</a></li>
         <li><a href="#spWork" data-toggle="tab">审批工单</a></li>
@@ -203,6 +201,7 @@
 
         var str = "";
         str += "<option value='A_001'>A_001:节点固定审批人</option>";
+        str += "<option value='A_002'>A_002:节点随机审批人</option>";
         $("#processSelect1").html(str);
         $("#processSelect2").html(str);
     }

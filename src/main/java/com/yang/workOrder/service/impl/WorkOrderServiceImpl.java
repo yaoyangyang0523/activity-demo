@@ -135,7 +135,7 @@ public class WorkOrderServiceImpl implements IWorkOrderService {
                 // 审批人
                 String sp1 = ((UserTask) e).getAssignee();
                 if (StringUtils.isNotBlank(sp1)) {
-                    if (sp1.contains("$")) {
+                    if (sp1.contains("#")) {
                         obj.put("spUser", "动态审批人");
                     } else {
                         User u = userService.queryByUserName(sp1);
@@ -147,7 +147,7 @@ public class WorkOrderServiceImpl implements IWorkOrderService {
                     String spUser = "";
                     for (String s : sp2) {
                         if (StringUtils.isNotBlank(s)) {
-                            if (s.contains("$")) {
+                            if (s.contains("#")) {
                                 spUser = "动态审批人";
                                 break;
                             } else {
@@ -167,6 +167,8 @@ public class WorkOrderServiceImpl implements IWorkOrderService {
                     } else {
                         obj.put("spResult", "");
                     }
+                } else {
+                    obj.put("spResult", "");
                 }
 
                 spLink.add(obj);

@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.yang.workOrder.entity.WorkOrder;
 
 /**
- * explain：
+ * explain：基础流程操作服务接口
  *
  * @author yang
  * @date 2021/1/5

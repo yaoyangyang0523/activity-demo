@@ -175,5 +175,11 @@ function dateFormat(value) {
         i = date.getMinutes(),
         s = date.getSeconds();
 
+    m = (m < 10) ? "0" + m : m;
+    d = (d < 10) ? "0" + d : d;
+    H = (H < 10) ? "0" + H : H;
+    i = (i < 10) ? "0" + i : i;
+    s = (s < 10) ? "0" + s : s;
+
     return Y + '-' + m + '-' + d + ' ' + H + ':' + i + ':' + s;
 }

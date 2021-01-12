@@ -24,4 +24,11 @@ public interface IUserService {
      * @return
      */
     User queryByUserName(String userName);
+
+    /**
+     * 随机生成审批人员
+     * @param num
+     * @return
+     */
+    String randomSpUser(int num);
 }
